@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        label{
+            text-align: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+        
+        div{
+            padding: 10px;
+        }
+
+        input[type="text"]{
+            width: 250px;
+            height: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+        input[type="email"]{
+            width: 250px;
+            height: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+        }
+        form{
+            
+            border-radius: 4px;
+            background-color: cyan;
+            width: 500px;
+            margin-left: 400px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        
+        <h2>Login Form</h2>
+        <div>
+            <label>First Name</label>
+            <br>
+            <input type="text" name="firstname" placeholder="First Name">
+            <br>
+        </div>
+        <div>
+            <label>Lastname</label>
+            <br>
+            <input type="text" name="Last_Name" placeholder="Last Name">
+            <br>
+        </div>
+        <div>
+            <label>Email Address</label>
+            <br>
+             <input required type="email" name="email_address" placeholder="louislukoma@gmail.com">
+            <br>
+            <div>
+                <label for="age">Age</label>
+                <br>
+                <input type="number" name="age" id="age" min="1" max="200" step="1">
+                <br>
+
+            </div>
+            <div>
+                <label for="date">Birthdate</label>
+                <br>
+                <input type="date" name="date" id="date">
+                <br>
+            </div>
+        </div>
+    
+        <div>
+            <label>Password</label>
+            <br>
+            <input required type="password" name="Password" placeholder="enter atleast 8 characters">
+            <br>   
+        </div>
+        <div>
+            Gemder
+            <br>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <br>
+        </div>
+        <div>
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gender" id="female">
+            <br>
+        </div>
+        <div>
+            <label for="Remember me"> Remember me</label>
+            <input type="checkbox" name="Remember_me" id="Remember me">
+            <br>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        
+        
+    </form>
+</body>
+</html>
